@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/83bc1ca4bb.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="webpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form id="form">
+                        <input id="search-engine" class="form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search" /><input id="go" class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit" value="GO" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button id="current" class="btn btn-outline-success my-2 my-sm-0" type="button">
+                        CURRENT LOCATION
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1 id="city-name">
+                    Monza
+                </h1>
+            </div>
+            <div class="col-6">
+                <h2>
+                    <i class="fas fa-sun"></i>
+                    <span id="temperature">20</span>°
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h6><strong id="current-date">Thursday</strong></h6>
+            </div>
+            <div class="col-6">
+                <strong>SUNNY</strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h6 id="current-time">
+                    HOUR
+                </h6>
+            </div>
+        </div>
+        <hr />
+        <div class="grid-container">
+            <div class="row">
+                <div class="col-2 grid">
+                    Friday ☀️19°
+                </div>
+                <div class="col-2 grid">
+                    Saturday ☀️20°
+                </div>
+                <div class="col-2 grid">
+                    Sunday ⛅20°
+                </div>
+                <div class="col-2 grid">
+                    Monday ⛅19°
+                </div>
+                <div class="col-2 grid">
+                    Tuesday ☀️20°
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
